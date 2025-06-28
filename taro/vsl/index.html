@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSL | Lectura de Cartas – Descubre Tu Misión Sagrada</title>
+    <link rel="canonical" href="./vsl/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+.spiritual-section {
+    background: linear-gradient(135deg, #2c1a4d, #1a1a2e);
+    color: #f0e6ff;
+    padding: 40px 20px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+</style>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+</head>
+<body>
+    <div class="corpo">
+        <div class="conteudo">
+            <img src="../img/celestino.png" width="284" alt="">
+           
+
+            <vturb-smartplayer id="vid-685d48d661d286155eeeb39b" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/153cf8aa-4a0c-4bc6-9d1a-2a5e0fbf77af/players/685d48d661d286155eeeb39b/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+
+            
+            <style>.esconder {display: none}</style>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function() {
+                  // adicione as informações dos vídeos abaixo
+                  const vturbVideos = [
+                    {videoId: "685d48d661d286155eeeb39b", delayInSeconds: 1660, utm: "viewcontent"},
+                  ];
+          
+                  let SECONDS_TO_DISPLAY = 5;
+                  let CLASS_TO_DISPLAY = ".esconder";
+          
+                  let attempts = 0;
+                  let elsHiddenList = [];
+                  let elsDisplayed = false;
+                  let elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+                  let alreadyDisplayedKey = "alreadyElsDisplayed" + SECONDS_TO_DISPLAY;
+                  try {
+                    alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+                  } catch (e) {
+                    console.warn('Failed to read data from localStorage: ', e);
+                  }
+          
+                  setTimeout(function() {
+                    elsHiddenList = Array.prototype.slice.call(elsHidden);
+                  }, 0);
+          
+                  let showHiddenElements = function() {
+                    elsDisplayed = true;
+                    elsHiddenList.forEach((e) => (e.style.display = "block"));
+                    try {
+                      localStorage.setItem(alreadyDisplayedKey, true);
+                    } catch (e) {
+                      console.warn('Failed to save data in localStorage: ', e);
+                    }
+                  };
+          
+                  let startWatchVideoProgress = function() {
+                    if (
+                      typeof smartplayer === "undefined" ||
+                      !(smartplayer.instances && smartplayer.instances.length)
+                    ) {
+                      if (attempts >= 10) return;
+                      attempts += 1;
+                      return setTimeout(function() {
+                        startWatchVideoProgress();
+                      }, 1000);
+                    }
+          
+                    console.log("teste a/b delay script loaded");
+                    const buttonLinks = document.querySelectorAll("a");
+                    vturbVideos.forEach((video) => {
+                      if (smartplayer.instances[0].analytics.player.options.id == video.videoId) {
+                        utmPrefix = window.location.search ? '&' : '?';
+                        const queryString = window.location.search.replace("utm_source=FB", "") + utmPrefix + video.utm;
+                        if (buttonLinks[0].href.includes(video.utm)) return;
+                        buttonLinks.forEach((buttonLink) => {
+                            if (buttonLink.href.includes("#")) return;
+                            if(buttonLink.href.includes('?')) {
+                              buttonLink.href += queryString.replace("?", "&");
+                            }else {
+                              buttonLink.href += queryString;
+                            }
+                        });
+                      }
+                    })
+          
+                    if (alreadyElsDisplayed === "true") return;
+          
+                    vturbVideos.forEach((video) => {
+                      if (smartplayer.instances[0].analytics.player.options.id == video.videoId) {
+                        SECONDS_TO_DISPLAY = video.delayInSeconds;
+                      }
+                    })
+          
+                    smartplayer.instances[0].on("timeupdate", () => {
+                      if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+                      if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+                      showHiddenElements();
+                    });
+                  };
+          
+                  if (alreadyElsDisplayed === "true") {
+                    setTimeout(function() {
+                      showHiddenElements();
+                    }, 100);
+                  }
+                  startWatchVideoProgress();
+                });
+              </script>	
+
+<div class="space"></div>
+<a href="../checkout/index.html" class="pulse-button esconder" >acessar site</a>
+           
+        </div>
+
+
+  
+   
+</body>
+</html>
