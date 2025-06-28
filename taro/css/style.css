@@ -1,0 +1,145 @@
+body {
+    margin: 0 auto;
+}
+.corpo {
+    background-image: url(img/background-taro.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteudo {
+    max-width: 700px;
+    margin: 40px auto; /* centraliza horizontalmente e dá espaço vertical */
+    color: white;
+    text-align: center;
+}
+h1 {
+font-family: "Raleway", sans-serif;
+font-size: 45px;
+color: #9C043C;
+font-weight: 700;
+}
+
+h2 {
+font-family: "Raleway", sans-serif;
+font-size: 25px;
+color: #9C043C;
+font-weight: 700;
+}
+h3 {
+font-family: "Raleway", sans-serif;
+font-size: 21px;
+color: #9C043C;
+font-weight: 700;
+}
+
+p {
+font-family: "Raleway", sans-serif;
+font-size: 18px;
+color: #9C043C;
+font-weight: 500;
+}
+
+.space {
+padding: 15px;
+}
+
+.pulse-button {
+padding: 14px 90px;
+font-size: 25px;
+color: white;
+background-color: #9C043C;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+outline: none;
+animation: pulse 2s infinite;
+transition: background 0.3s;
+}
+
+.pulse-button:hover {
+background-color: #0056b3;
+}
+
+@keyframes pulse {
+0% {
+transform: scale(1);
+box-shadow: 0 0 0 0 rgb(156 4 60);
+}
+70% {
+transform: scale(1.05);
+box-shadow: 0 0 0 20px rgba(0, 123, 255, 0);
+}
+100% {
+transform: scale(1);
+box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+}
+
+a {
+    font-size: 24px;
+    background-color: #9C043C;
+    color: #fff;
+    padding: 16px 70px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 14px;
+}
+}
+h1, h2, h3, p {
+    color: #fff;
+}
+p {
+    font-size: 16px;
+}
+  .tarot-container {
+    text-align: center;
+    color: white;
+    max-width: 100%;
+  }
+
+  .cartas-escolha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+
+  .carta-tarot {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .carta-tarot:hover {
+    transform: scale(1.05);
+  }
+
+  .oculto {
+    display: none !important;
+  }
+
+  .cartas-reveladas {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 30px auto 0;
+  }
+
+  @media (max-width: 600px) {
+    .carta-tarot {
+      width: 100px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+  }
