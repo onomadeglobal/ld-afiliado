@@ -77,16 +77,6 @@ box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
 }
 }
 
-a {
-    font-size: 24px;
-    background-color: #9C043C;
-    color: #fff;
-    padding: 16px 70px;
-    border-radius: 7px;
-    text-decoration: none;
-    margin: 14px;
-}
-}
 h1, h2, h3, p {
     color: #fff;
 }
